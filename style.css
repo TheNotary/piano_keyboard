@@ -5,6 +5,7 @@ body {
 }
 
 .keyboard {
+  position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -30,4 +31,22 @@ body {
 
 #C-sharp, #D-sharp, #F-sharp, #G-sharp, #A-sharp {
 	margin-left: -17px;
+}
+
+.white-key.selected {
+  background-color: #ffA;
+}
+
+.black-key.selected {
+  background-color: #ee0;
+}
+
+.scale-name {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
 }
